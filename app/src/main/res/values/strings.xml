@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Projet Programmation Mobile</string>
+    <string name="Welcome">Welcome to STAR WARS WIKI !</string>
+    <string name="buttonText">May the knowledge be with you !</string>
+</resources>
