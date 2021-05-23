@@ -41,7 +41,7 @@ class CharactersListViewModel : ViewModel(){
     fun goNextPage() {
         charactersList.value = CharactersLoader
         nextPage?.let {
-            var page = it.substring(42)
+            val page = it.substring(42)
             Singleton.charactersApi.getNextPage(page).enqueue(object : Callback<CharactersListResponse> {
                 override fun onFailure(call: Call<CharactersListResponse>, t: Throwable) {
                     charactersList.value = CharactersError

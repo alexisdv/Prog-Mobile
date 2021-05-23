@@ -53,7 +53,7 @@ class CharactersAdapter(private var dataSet: List<Characters>, val listener: ((I
         return ViewHolder(view)
     }
 
-    fun divideList(list: List<Characters>, num : Int): MutableList<Characters> {
+    private fun divideList(list: List<Characters>, num : Int): MutableList<Characters> {
         val listeG : MutableList<Characters> = mutableListOf()
         val listeD : MutableList<Characters> = mutableListOf()
         var compteur = 0
@@ -76,7 +76,7 @@ class CharactersAdapter(private var dataSet: List<Characters>, val listener: ((I
         }
     }
 
-    fun divideSecondList(list: List<Characters>, listG : MutableList<Characters>,  listD : MutableList<Characters>, num : Int): MutableList<Characters> {
+    private fun divideSecondList(list: List<Characters>, listG : MutableList<Characters>, listD : MutableList<Characters>, num : Int): MutableList<Characters> {
         var compteur = 0
         for(item in list)
         {
